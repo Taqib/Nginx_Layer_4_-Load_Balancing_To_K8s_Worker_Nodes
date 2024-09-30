@@ -1,0 +1,19 @@
+Host nginx
+    HostName <nginx-public-ip>
+    User ubuntu
+    IdentityFile <path-to-your-keyfile>/nginx.pem
+
+Host master
+    HostName <master-ip>
+    User ubuntu
+    IdentityFile <path-to-your-keyfile>/k3sCluster.pem
+
+Host worker1
+    HostName <worker1-instance-ip>
+    User ubuntu
+    IdentityFile <path-to-your-keyfile>/k3sCluster.pem
+
+Host worker2
+    HostName <worker2-instance-ip>
+    User ubuntu
+    IdentityFile <path-to-your-keyfile>/k3sCluster.pem
