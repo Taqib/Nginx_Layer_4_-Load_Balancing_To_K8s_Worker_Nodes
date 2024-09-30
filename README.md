@@ -20,3 +20,18 @@ For this project, we need an instance for NGINX, and three instance for k3s (mas
 Configure AWS CLI
 Configure AWS CLI with the necessary credentials. Run the following command and follow the prompts to configure it:
 aws configure
+
+Explanation: This command sets up your AWS CLI with the necessary credentials, region, and output format.
+
+Set Up a Pulumi Project
+Set Up a Pulumi Project:
+Create a new directory for your project and navigate into it:
+
+mkdir aws-k3s-infra
+cd aws-k3s-infra
+
+Initialize a New Pulumi Project:
+Run the following command to create a new Pulumi project:
+
+pulumi new aws-javascript
+
