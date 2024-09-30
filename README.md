@@ -35,3 +35,30 @@ Run the following command to create a new Pulumi project:
 
 pulumi new aws-javascript
 
+Create Key Pair::
+Nginx Instance
+aws ec2 create-key-pair --key-name nginx --query 'KeyMaterial' --output text > nginx.pem
+
+k3s cluster
+aws ec2 create-key-pair --key-name k3sCluster --query 'KeyMaterial' --output text > k3sCluster.pem
+
+These commands will create key pair for nginx instance and for k3s cluster(master, worker1, worker2)
+
+Set File Permissions of the key files:
+
+chmod 400 nginx.pem
+chmod 400 k3sCluster.pem
+
+
+Write Code for infrastructure creation
+Open index.js file in your project directory:
+
+
+Step 2: Create a simple flask server, build image, push to docker hub
+Create a directory in your local machine (e.g., flask-server)
+
+
+
+
+
+
